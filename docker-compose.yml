@@ -1,0 +1,11 @@
+flocker-dataset-agent:
+  image: flaccid/flocker-dataset-agent
+  labels:
+    io.rancher.container.pull_image: always
+  net: host
+  restart: always
+  tty: true
+  stdin_open: true
+  volumes:
+  - /:/host
+  - /dev:/dev
